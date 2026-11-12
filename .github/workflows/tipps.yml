@@ -4,6 +4,9 @@ on:
   schedule:
     - cron: "*/10 * * * *"   # alle 10 Minuten (GitHub startet oft ein paar Minuten später)
   workflow_dispatch:          # manuell starten über "Run workflow"
+  push:
+    branches: [main]
+    paths: ["**.py", ".github/workflows/**", "requirements.txt"]
 
 concurrency:
   group: tipps
@@ -33,8 +36,8 @@ jobs:
         run: |
           git config user.name "wettbot"
           git config user.email "wettbot@users.noreply.github.com"
-          if [ -n "$(git status --porcelain state.json)" ]; then
-            git add state.json
+          if [ -n "$(git status --porcelain state.json status.json)" ]; then
+            git add state.json status.json
             git commit -m "state update"
             git pull --rebase
             git push

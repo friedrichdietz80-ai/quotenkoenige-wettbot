@@ -21,6 +21,8 @@ log = logging.getLogger("cron")
 LEAGUES = {lg.key: lg for lg in config.LEAGUES if lg.enabled}
 STATE = config.STATE_FILE
 DISCORD_API = "https://discord.com/api/v10"
+STATUS_FILE = "status.json"
+errors: list[str] = []
 
 
 def load_state() -> dict:
@@ -59,8 +61,34 @@ async def handle(session, ev: espn.Event, state: dict):
                                espn.odds_details(summ))
         await post_embed(session, config.CHANNELS[lg.sport], embeds.build(result, lg.sport).to_dict())
         log.info("Gepostet: %s vs %s", ev.home, ev.away)
-    except Exception:
+    except Exception as exc:
         log.exception("Fehler bei %s vs %s", ev.home, ev.away)
+        errors.append(f"{ev.home} vs {ev.away}: {type(exc).__name__}: {str(exc)[:300]}")
+
+
+async def check_keys(session: aiohttp.ClientSession) -> dict:
+    """Prüft ohne Kosten, ob die beiden Secrets gültig sind (Werte werden nie ausgegeben)."""
+    res = {}
+    tok = config.DISCORD_TOKEN or ""
+    key = config.ANTHROPIC_API_KEY or ""
+    res["discord_token_laenge"] = len(tok)
+    res["anthropic_key_laenge"] = len(key)
+    res["anthropic_key_beginnt_mit_sk_ant"] = key.startswith("sk-ant-")
+    res["leerzeichen_oder_anfuehrungszeichen"] = any(c in tok + key for c in ' "\'\n')
+    try:
+        async with session.get(f"{DISCORD_API}/users/@me", headers={"Authorization": f"Bot {tok}"}) as r:
+            res["discord"] = r.status
+    except Exception as exc:
+        res["discord"] = str(exc)[:200]
+    try:
+        async with session.get("https://api.anthropic.com/v1/models",
+                               headers={"x-api-key": key, "anthropic-version": "2023-06-01"}) as r:
+            res["anthropic"] = r.status
+            if r.status != 200:
+                res["anthropic_fehler"] = (await r.text())[:300]
+    except Exception as exc:
+        res["anthropic"] = str(exc)[:200]
+    return res
 
 
 async def main():
@@ -68,6 +96,8 @@ async def main():
     now = datetime.now(timezone.utc)
     due: list[espn.Event] = []
     async with aiohttp.ClientSession() as session:
+        keys = await check_keys(session)
+        log.info("Schlüssel-Check: %s", keys)
         for lg in LEAGUES.values():
             try:
                 events = await espn.list_events(session, lg.key)
@@ -87,6 +117,14 @@ async def main():
 
         await asyncio.gather(*(run(ev) for ev in sorted(due, key=lambda e: e.kickoff)))
     save_state(state)
+    old = {}
+    if os.path.exists(STATUS_FILE):
+        with open(STATUS_FILE, encoding="utf-8") as f:
+            old = json.load(f)
+    status = {"letzter_lauf": now.isoformat(timespec="minutes"), "schluessel": keys,
+              "faellig": len(due), "fehler": errors or old.get("fehler", [])}
+    with open(STATUS_FILE, "w", encoding="utf-8") as f:
+        json.dump(status, f, indent=1, ensure_ascii=False)
 
 
 if __name__ == "__main__":
