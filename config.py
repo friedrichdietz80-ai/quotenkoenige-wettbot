@@ -10,6 +10,8 @@ load_dotenv(".env") or load_dotenv(".env.example")
 
 def _env(name: str, default: str | None = None, required: bool = False) -> str | None:
     val = os.getenv(name, default)
+    if isinstance(val, str):
+        val = val.strip().strip('"').strip("'").strip()  # Leerzeichen/Zeilenumbrüche vom Einfügen entfernen
     if required and not val:
         raise RuntimeError(f"Umgebungsvariable {name} fehlt (siehe .env.example)")
     return val
