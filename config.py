@@ -42,6 +42,7 @@ class League:
     lead_minutes: int     # wie viele Minuten vor Anpfiff posten
     extra_markets: str    # was Claude zusätzlich per Websuche checken soll
     enabled: bool = True
+    group_prefix: str = ""  # nur Spiele dieser Gruppe, z. B. "Group A" = Nations League Liga A
 
 
 FOOTBALL_EXTRA = "Torschützen (jederzeit), beide Teams treffen, Über/Unter Tore, Handicap"
@@ -55,7 +56,8 @@ LEAGUES: list[League] = [
     League("soccer/ita.1", "Serie A", "football", 60, FOOTBALL_EXTRA),
     League("soccer/fra.1", "Ligue 1", "football", 60, FOOTBALL_EXTRA),
     League("soccer/uefa.champions", "Champions League", "football", 60, FOOTBALL_EXTRA),
-    League("soccer/uefa.nations", "UEFA Nations League", "football", 60, FOOTBALL_EXTRA),
+    League("soccer/uefa.nations", "UEFA Nations League", "football", 60, FOOTBALL_EXTRA,
+           group_prefix="Group A"),  # nur Liga A (K.-o.-Spiele ohne Gruppe laufen auch mit)
     League("soccer/tur.1", "Süper Lig", "football", 60, FOOTBALL_EXTRA, enabled=False),
     # NFL: Inactives kommen 90 Min vor Kickoff -> 75 Min vorher posten
     League("football/nfl", "NFL", "nfl", 75, NFL_EXTRA),

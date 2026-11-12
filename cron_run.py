@@ -106,6 +106,8 @@ async def main():
                 continue
             lead = timedelta(minutes=lg.lead_minutes)
             for ev in events:
+                if lg.group_prefix and ev.group and not ev.group.startswith(lg.group_prefix):
+                    continue
                 if ev.id not in state and ev.kickoff - lead <= now < ev.kickoff:
                     due.append(ev)
         log.info("%d Spiel(e) fällig", len(due))

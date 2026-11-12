@@ -75,6 +75,8 @@ class WettBot(discord.Client):
         for lg in LEAGUES.values():
             try:
                 for ev in await espn.list_events(self.session, lg.key):
+                    if lg.group_prefix and ev.group and not ev.group.startswith(lg.group_prefix):
+                        continue
                     if now - timedelta(hours=3) < ev.kickoff < now + timedelta(days=2):
                         new[ev.id] = ev
             except Exception as exc:

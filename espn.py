@@ -38,6 +38,7 @@ class Event:
     home: str
     away: str
     kickoff: datetime
+    group: str = ""        # z. B. "Group A1" (Nations League)
 
 
 def dig(obj, *path, default=None):
@@ -106,6 +107,7 @@ async def list_events(session: aiohttp.ClientSession, league_key: str) -> list[E
                 home=dig(home, "team", "displayName", default="?"),
                 away=dig(away, "team", "displayName", default="?"),
                 kickoff=datetime.fromisoformat(e["date"].replace("Z", "+00:00")),
+                group=dig(e, "competitions", 0, "groups", "name", default="") or "",
             )
     return list(events.values())
 
