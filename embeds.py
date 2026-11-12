@@ -31,6 +31,8 @@ def build(a: Analysis, sport: str) -> discord.Embed:
         e.add_field(name="🚑 Ausfälle / Fraglich", value="\n".join(f"• {x}" for x in a.absences)[:1024], inline=False)
     if a.main_tip:
         e.add_field(name="🎯 Unser Tipp", value=_pick_line(a.main_tip)[:1024], inline=False)
+    elif a.tip_text:
+        e.add_field(name="🎯 Unser Tipp", value=a.tip_text[:1024], inline=False)
     if a.value_picks:
         e.add_field(name="💎 Value-Wetten",
                     value="\n\n".join(_pick_line(p) for p in a.value_picks)[:1024], inline=False)

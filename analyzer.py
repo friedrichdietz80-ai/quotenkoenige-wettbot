@@ -44,7 +44,7 @@ JSON_SPEC = """Format:
     {"auswahl": "z. B. Harry Kane trifft", "quote": 0.00, "buchmacher": "Quelle der Quote",
      "wahrscheinlichkeit": 0.00, "begruendung": "1 Satz"}
   ],
-  "tipp": {"id": "<ID aus der Liste ODER exakter Text einer zusatz_wette>", "begruendung": "1-2 Sätze"},
+  "tipp": {"id": "<ID exakt aus der Liste kopiert ODER exakter 'auswahl'-Text einer zusatz_wette>", "begruendung": "1-2 Sätze"},
   "unsicherheit": "niedrig | mittel | hoch"
 }
 ```
@@ -80,6 +80,7 @@ class Analysis:
     main_tip: Pick | None
     uncertainty: str
     sources: list[str]
+    tip_text: str = ""        # Tipp als Text, falls er keiner Quote zugeordnet werden kann
 
 
 def _odds_table(selections: list[Selection]) -> str:
@@ -131,6 +132,30 @@ def _prob(val) -> float | None:
     return p if 0 < p < 1 else None
 
 
+def _norm(x: str) -> str:
+    x = x.lower().removeprefix("extra|")
+    x = re.sub(r"\bover\b", "über", x)
+    x = re.sub(r"\bunder\b", "unter", x)
+    return re.sub(r"[^a-z0-9äöüß.+-]+", " ", x).strip()
+
+
+def _match_tip(tip_id: str, picks: dict) -> "Pick | None":
+    """Ordnet den Tipp auch bei leicht abweichender Schreibweise zu."""
+    if not tip_id:
+        return None
+    if tip_id in picks:
+        return picks[tip_id]
+    t = _norm(tip_id)
+    for key, pk in picks.items():
+        if t in (_norm(key), _norm(pk.selection.label), _norm(pk.selection.id)):
+            return pk
+    for key, pk in picks.items():
+        lab = _norm(pk.selection.label)
+        if t and lab and (t in lab or lab in t):
+            return pk
+    return None
+
+
 async def analyze(event: Event, league_name: str, sport: str, extra_markets: str,
                   selections: list[Selection], team_news: str, odds_text: str) -> Analysis:
     kickoff = event.kickoff.astimezone(ZoneInfo(config.TIMEZONE)).strftime("%d.%m.%Y %H:%M")
@@ -177,11 +202,18 @@ Recherchiere jetzt die aktuellen Infos (heute!) und schätze danach deine Wahrsc
                    key=lambda pk: pk.ev, reverse=True)[:4]
 
     tip_data = data.get("tipp") or {}
-    tip_id = str(tip_data.get("id", ""))
-    main_tip = picks.get(tip_id) or picks.get(tip_id.removeprefix("extra|"))
+    if isinstance(tip_data, str):
+        tip_data = {"id": tip_data}
+    main_tip = _match_tip(str(tip_data.get("id") or tip_data.get("auswahl") or ""), picks)
+    if main_tip is None and picks:
+        # Fallback: Wette mit dem höchsten Erwartungswert
+        main_tip = max(picks.values(), key=lambda pk: pk.ev)
     if main_tip and tip_data.get("begruendung"):
         main_tip.reason = tip_data["begruendung"]
+    tip_text = ""
+    if main_tip is None and (tip_data.get("id") or tip_data.get("begruendung")):
+        tip_text = f"{tip_data.get('id', '')} – {tip_data.get('begruendung', '')}".strip(" –")
 
     return Analysis(event, league_name, data.get("zusammenfassung", ""), data.get("favorit", ""),
                     data.get("ausfaelle", [])[:10], value, main_tip,
-                    data.get("unsicherheit", "mittel"), sources[:5])
+                    data.get("unsicherheit", "mittel"), sources[:5], tip_text)
