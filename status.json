@@ -1,12 +1,12 @@
 {
- "letzter_lauf": "2026-11-12T00:49+00:00",
+ "letzter_lauf": "2026-11-12T00:50+00:00",
  "schluessel": {
-  "discord_token_laenge": 73,
-  "anthropic_key_laenge": 107,
+  "discord_token_laenge": 72,
+  "anthropic_key_laenge": 106,
   "anthropic_key_beginnt_mit_sk_ant": true,
-  "leerzeichen_oder_anfuehrungszeichen": true,
-  "discord": "Forbidden control character detected in headers. Potential header injection attack.",
-  "anthropic": "Forbidden control character detected in headers. Potential header injection attack."
+  "leerzeichen_oder_anfuehrungszeichen": false,
+  "discord": 200,
+  "anthropic": 200
  },
  "faellig": 0,
  "fehler": []
