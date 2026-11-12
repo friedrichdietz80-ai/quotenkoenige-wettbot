@@ -3,3 +3,4 @@ anthropic>=0.60
 aiohttp>=3.9
 python-dotenv>=1.0
 tzdata
+json-repair>=0.30

@@ -93,9 +93,17 @@ def _odds_table(selections: list[Selection]) -> str:
 
 
 def _extract_json(text: str) -> dict:
-    m = re.search(r"```json\s*(\{.*?\})\s*```", text, re.S)
+    m = re.search(r"```json\s*(\{.*\})\s*```", text, re.S)
     raw = m.group(1) if m else text[text.find("{"): text.rfind("}") + 1]
-    return json.loads(raw)
+    try:
+        return json.loads(raw)
+    except json.JSONDecodeError:
+        # z. B. unmaskierte Anführungszeichen in Begründungen -> reparieren
+        from json_repair import repair_json
+        data = repair_json(raw, return_objects=True)
+        if not isinstance(data, dict):
+            raise
+        return data
 
 
 async def _ask_claude(prompt: str) -> tuple[str, list[str]]:
