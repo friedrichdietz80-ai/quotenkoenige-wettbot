@@ -12,6 +12,7 @@ import discord
 from discord import app_commands
 from discord.ext import tasks
 
+import aliases
 import config
 import embeds
 import espn
@@ -139,13 +140,14 @@ bot = WettBot()
 
 
 def _find(query: str) -> espn.Event | None:
-    q = query.lower()
-    hits = [e for e in bot.schedule.values() if q in e.home.lower() or q in e.away.lower()]
+    terms = aliases.search_terms(query)
+    hits = [e for e in bot.schedule.values()
+            if any(t in aliases.fold(e.home) or t in aliases.fold(e.away) for t in terms)]
     return min(hits, key=lambda e: e.kickoff) if hits else None
 
 
 @bot.tree.command(name="analyse", description="Analyse für ein Spiel jetzt sofort erstellen")
-@app_commands.describe(team="Teamname (oder Teil davon), z. B. 'Bayern' oder 'Lakers'")
+@app_commands.describe(team="Team oder Nation, z. B. 'Bayern', 'Lakers', 'Deutschland', 'Türkei'")
 async def analyse_cmd(interaction: discord.Interaction, team: str):
     await interaction.response.defer(thinking=True)
     if not bot.schedule:
