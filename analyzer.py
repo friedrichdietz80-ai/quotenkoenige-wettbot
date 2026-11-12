@@ -45,6 +45,9 @@ JSON_SPEC = """Format:
     {"auswahl": "z. B. Harry Kane trifft", "quote": 0.00, "buchmacher": "Quelle der Quote",
      "wahrscheinlichkeit": 0.00, "begruendung": "1 Satz"}
   ],
+  "kombi_pick": {"auswahl": "sichere Wette mit Quote 1.20-1.80, z. B. Doppelte Chance, Über 1.5 Tore, Sieg, Handicap",
+                 "quote": 0.00, "buchmacher": "Quelle der Quote", "wahrscheinlichkeit": 0.00,
+                 "begruendung": "1 Satz"},
   "tipp": {"id": "<ID exakt aus der Liste kopiert ODER exakter 'auswahl'-Text einer zusatz_wette>", "begruendung": "1-2 Sätze"},
   "unsicherheit": "niedrig | mittel | hoch"
 }
@@ -52,7 +55,9 @@ JSON_SPEC = """Format:
 Gib für JEDE ID aus der Quotenliste eine Schätzung ab. Bei "zusatz_wetten" 2-4 Spieler-/Zusatzmärkte,
 deren aktuelle Dezimalquote du per Websuche gefunden hast (bevorzugt deutsche Buchmacher oder
 Vergleichsseiten wie Oddschecker). Fehlt die Quotenliste, liefere die Hauptmärkte (Sieg/Remis,
-Über/Unter) ebenfalls als zusatz_wetten mit gefundenen Quoten. Wahrscheinlichkeiten zwischen 0 und 1."""
+Über/Unter) ebenfalls als zusatz_wetten mit gefundenen Quoten. Wahrscheinlichkeiten zwischen 0 und 1.
+"kombi_pick": die Wette mit Quote zwischen 1.20 und 1.80, die du für am wahrscheinlichsten hältst
+(für Kombiwetten). Darf auch eine ID aus der Liste sein (dann "auswahl" = ID). Nur echte, gefundene Quoten."""
 
 
 @dataclass
@@ -79,6 +84,7 @@ class Analysis:
     absences: list[str]
     value_picks: list[Pick]
     main_tip: Pick | None
+    kombi: Pick | None
     uncertainty: str
     sources: list[str]
     tip_text: str = ""        # Tipp als Text, falls er keiner Quote zugeordnet werden kann
@@ -231,10 +237,37 @@ Recherchiere jetzt die aktuellen Infos (heute!) und schätze danach deine Wahrsc
         main_tip.reason = tip_data["begruendung"]
     if main_tip:
         value = [pk for pk in value if pk is not main_tip]
+
+    # Kombi-Pick: Quote 1.20-1.80, möglichst hohe Wahrscheinlichkeit, kein deutlich negativer EV
+    kp = data.get("kombi_pick") or {}
+    if isinstance(kp, dict) and kp.get("auswahl"):
+        found = _match_tip(str(kp["auswahl"]), picks)
+        if found is None:
+            p, q = _prob(kp.get("wahrscheinlichkeit")), None
+            try:
+                q = float(kp.get("quote"))
+            except (TypeError, ValueError):
+                pass
+            if p and q and q > 1:
+                label = _clean(str(kp["auswahl"]))
+                found = Pick(Selection(f"extra|{label}", "extra", label, q, _book(kp.get("buchmacher")),
+                                       None, from_search=True), p, p * q - 1, kp.get("begruendung", ""))
+        elif kp.get("begruendung"):
+            found = Pick(found.selection, found.prob, found.ev, kp["begruendung"])
+        claude_kombi = found
+    else:
+        claude_kombi = None
+    in_range = [pk for pk in picks.values()
+                if config.KOMBI_MIN <= pk.selection.best_odds <= config.KOMBI_MAX and pk.ev > -0.03]
+    if claude_kombi and config.KOMBI_MIN <= claude_kombi.selection.best_odds <= config.KOMBI_MAX \
+            and claude_kombi.ev > -0.03:
+        kombi = claude_kombi
+    else:
+        kombi = max(in_range, key=lambda pk: (pk.prob, pk.ev)) if in_range else None
     tip_text = ""
     if main_tip is None and (tip_data.get("id") or tip_data.get("begruendung")):
         tip_text = f"{tip_data.get('id', '')} – {tip_data.get('begruendung', '')}".strip(" –")
 
     return Analysis(event, league_name, data.get("zusammenfassung", ""), data.get("favorit", ""),
-                    data.get("ausfaelle", [])[:10], value, main_tip,
+                    data.get("ausfaelle", [])[:10], value, main_tip, kombi,
                     data.get("unsicherheit", "mittel"), sources[:5], tip_text)

@@ -34,6 +34,12 @@ def build(a: Analysis, sport: str) -> discord.Embed:
         e.add_field(name=name, value=_pick_line(a.main_tip)[:1024], inline=False)
     elif a.tip_text:
         e.add_field(name="🎯 Unser Tipp", value=a.tip_text[:1024], inline=False)
+    if a.kombi:
+        k = a.kombi
+        check = " ⚠️ Quote prüfen" if k.selection.from_search else ""
+        e.add_field(name="🧩 Kombi-Pick (Quote 1.20–1.80)",
+                    value=(f"**{k.selection.label}** @ **{k.selection.best_odds:.2f}** ({k.selection.best_book})\n"
+                           f"Unsere Wkeit {k.prob:.0%} · _{k.reason}_{check}")[:1024], inline=False)
     if a.value_picks:
         e.add_field(name="💎 Weitere Value-Wetten" if a.main_tip else "💎 Value-Wetten",
                     value="\n\n".join(_pick_line(p) for p in a.value_picks)[:1024], inline=False)

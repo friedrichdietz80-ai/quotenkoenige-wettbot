@@ -26,6 +26,8 @@ WEB_SEARCH_MAX_USES = int(_env("WEB_SEARCH_MAX_USES", "5"))
 
 MIN_EDGE = float(_env("MIN_EDGE", "0.04"))           # ab 4 % Expected Value = "Value"
 MIN_PROB = float(_env("MIN_PROB", "0.20"))           # extreme Longshots ignorieren
+KOMBI_MIN = float(_env("KOMBI_MIN", "1.20"))         # Quotenbereich für den Kombi-Pick
+KOMBI_MAX = float(_env("KOMBI_MAX", "1.80"))
 
 AUTO_POST = _env("AUTO_POST", "1") == "1"   # 0 = lokaler Bot postet nicht automatisch (macht GitHub)
 TIMEZONE = _env("TIMEZONE", "Europe/Berlin")
@@ -53,6 +55,7 @@ LEAGUES: list[League] = [
     League("soccer/ita.1", "Serie A", "football", 60, FOOTBALL_EXTRA),
     League("soccer/fra.1", "Ligue 1", "football", 60, FOOTBALL_EXTRA),
     League("soccer/uefa.champions", "Champions League", "football", 60, FOOTBALL_EXTRA),
+    League("soccer/uefa.nations", "UEFA Nations League", "football", 60, FOOTBALL_EXTRA),
     League("soccer/tur.1", "Süper Lig", "football", 60, FOOTBALL_EXTRA, enabled=False),
     # NFL: Inactives kommen 90 Min vor Kickoff -> 75 Min vorher posten
     League("football/nfl", "NFL", "nfl", 75, NFL_EXTRA),

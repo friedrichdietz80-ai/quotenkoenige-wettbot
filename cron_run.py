@@ -109,7 +109,7 @@ async def main():
                 if ev.id not in state and ev.kickoff - lead <= now < ev.kickoff:
                     due.append(ev)
         log.info("%d Spiel(e) fällig", len(due))
-        sem = asyncio.Semaphore(2)
+        sem = asyncio.Semaphore(3)
 
         async def run(ev):
             async with sem:
