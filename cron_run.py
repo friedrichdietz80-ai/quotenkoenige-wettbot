@@ -49,7 +49,6 @@ async def post_embed(session: aiohttp.ClientSession, channel_id: int, embed_dict
 
 async def handle(session, ev: espn.Event, state: dict):
     lg = LEAGUES[ev.league_key]
-    state[ev.id] = datetime.now(timezone.utc).isoformat()  # auch bei Fehler nicht endlos wiederholen
     try:
         try:
             summ = await espn.summary(session, lg.key, ev.id)
@@ -60,6 +59,7 @@ async def handle(session, ev: espn.Event, state: dict):
                                espn.build_selections(summ, ev), espn.team_news(summ),
                                espn.odds_details(summ))
         await post_embed(session, config.CHANNELS[lg.sport], embeds.build(result, lg.sport).to_dict())
+        state[ev.id] = datetime.now(timezone.utc).isoformat()  # nur bei Erfolg merken -> Fehler werden wiederholt
         log.info("Gepostet: %s vs %s", ev.home, ev.away)
     except Exception as exc:
         log.exception("Fehler bei %s vs %s", ev.home, ev.away)
@@ -122,7 +122,7 @@ async def main():
         with open(STATUS_FILE, encoding="utf-8") as f:
             old = json.load(f)
     status = {"letzter_lauf": now.isoformat(timespec="minutes"), "schluessel": keys,
-              "faellig": len(due), "fehler": errors or old.get("fehler", [])}
+              "faellig": len(due), "fehler": errors}
     with open(STATUS_FILE, "w", encoding="utf-8") as f:
         json.dump(status, f, indent=1, ensure_ascii=False)
 
