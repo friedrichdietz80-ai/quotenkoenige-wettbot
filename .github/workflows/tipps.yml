@@ -2,15 +2,15 @@ name: Wett-Tipps posten
 
 on:
   schedule:
-    - cron: "*/10 * * * *"   # alle 10 Minuten (GitHub startet oft ein paar Minuten später)
-  workflow_dispatch:          # manuell starten über "Run workflow"
+    - cron: "*/15 * * * *"   # Startsignal; jeder Lauf prüft danach selbst ~55 Min lang alle 5 Min
+  workflow_dispatch:
   push:
     branches: [main]
     paths: ["**.py", ".github/workflows/**", "requirements.txt"]
 
 concurrency:
   group: tipps
-  cancel-in-progress: false
+  cancel-in-progress: false   # nächster Lauf wartet, bis der aktuelle fertig ist -> keine Lücken
 
 permissions:
   contents: write
@@ -18,7 +18,7 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 75
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -26,19 +26,23 @@ jobs:
           python-version: "3.12"
           cache: pip
       - run: pip install -r requirements.txt
-      - name: Fällige Spiele analysieren und posten
+      - name: Alle 5 Minuten fällige Spiele analysieren und posten (~55 Min)
         env:
           DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           STATE_FILE: state.json
-        run: python cron_run.py
-      - name: Gepostete Spiele merken
         run: |
           git config user.name "wettbot"
           git config user.email "wettbot@users.noreply.github.com"
-          if [ -n "$(git status --porcelain state.json status.json)" ]; then
-            git add state.json status.json
-            git commit -m "state update"
-            git pull --rebase
-            git push
-          fi
+          end=$(( $(date +%s) + 55*60 ))
+          while true; do
+            git pull -q --rebase origin main || true
+            python cron_run.py || echo "Lauf fehlgeschlagen, nächster Versuch in 5 Min"
+            if [ -n "$(git status --porcelain state.json status.json)" ]; then
+              git add state.json status.json
+              git commit -q -m "state update"
+              git pull -q --rebase origin main && git push -q || echo "Push fehlgeschlagen"
+            fi
+            [ $(( $(date +%s) + 300 )) -gt $end ] && break
+            sleep 300
+          done
