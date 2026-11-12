@@ -8,6 +8,9 @@
   "discord": 200,
   "anthropic": 200
  },
- "faellig": 0,
- "fehler": []
+ "faellig": 4,
+ "fehler": [
+  "Milwaukee Bucks vs Los Angeles Lakers: JSONDecodeError: Expecting ',' delimiter: line 25 column 194 (char 3652)",
+  "New Orleans Pelicans vs Brooklyn Nets: JSONDecodeError: Expecting ',' delimiter: line 21 column 338 (char 3053)"
+ ]
 }
