@@ -30,14 +30,17 @@ def build(a: Analysis, sport: str) -> discord.Embed:
     if a.absences:
         e.add_field(name="🚑 Ausfälle / Fraglich", value="\n".join(f"• {x}" for x in a.absences)[:1024], inline=False)
     if a.main_tip:
-        e.add_field(name="🎯 Unser Tipp", value=_pick_line(a.main_tip)[:1024], inline=False)
+        name = "🎯 Unser Tipp" if a.main_tip.ev >= config.MIN_EDGE else "🎯 Unser Tipp (Tendenz, kein Value)"
+        e.add_field(name=name, value=_pick_line(a.main_tip)[:1024], inline=False)
     elif a.tip_text:
         e.add_field(name="🎯 Unser Tipp", value=a.tip_text[:1024], inline=False)
     if a.value_picks:
-        e.add_field(name="💎 Value-Wetten",
+        e.add_field(name="💎 Weitere Value-Wetten" if a.main_tip else "💎 Value-Wetten",
                     value="\n\n".join(_pick_line(p) for p in a.value_picks)[:1024], inline=False)
     else:
-        e.add_field(name="💎 Value-Wetten", value="Kein klarer Value – Markt wirkt fair bepreist.", inline=False)
+        e.add_field(name="💎 Weitere Value-Wetten" if a.main_tip else "💎 Value-Wetten",
+                    value="Keine weiteren – Markt wirkt fair bepreist." if a.main_tip and a.main_tip.ev >= config.MIN_EDGE
+                    else "Kein klarer Value – Markt wirkt fair bepreist.", inline=False)
     if a.sources:
         e.add_field(name="Quellen", value="\n".join(a.sources)[:1024], inline=False)
     e.set_footer(text=f"Unsicherheit: {a.uncertainty} · Quoten: US-Buchmacher via ESPN, deine können abweichen · "

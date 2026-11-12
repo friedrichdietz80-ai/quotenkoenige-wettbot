@@ -5,6 +5,7 @@ import json
 import logging
 import re
 from dataclasses import dataclass
+from datetime import datetime
 from zoneinfo import ZoneInfo
 
 from anthropic import AsyncAnthropic
@@ -124,6 +125,21 @@ async def _ask_claude(prompt: str) -> tuple[str, list[str]]:
     raise RuntimeError("Claude hat die Analyse nicht abgeschlossen")
 
 
+def _clean(text) -> str:
+    """Entfernt Zitier-Markup wie <cite index="1-2">…</cite> aus Claudes Text."""
+    if not isinstance(text, str):
+        return text
+    text = re.sub(r"</cite>\)?", "", text)
+    text = re.sub(r"\(?<?cite\b[^>]*>", "", text)
+    return re.sub(r"\s{2,}", " ", text).strip()
+
+
+def _book(name) -> str:
+    """'TonyBet (−105 laut Squawka, ...)' -> 'TonyBet'"""
+    name = str(name or "Websuche")
+    return re.split(r"\s*[(\[,;]", name)[0].strip()[:30] or "Websuche"
+
+
 def _prob(val) -> float | None:
     try:
         p = float(val)
@@ -158,9 +174,12 @@ def _match_tip(tip_id: str, picks: dict) -> "Pick | None":
 
 async def analyze(event: Event, league_name: str, sport: str, extra_markets: str,
                   selections: list[Selection], team_news: str, odds_text: str) -> Analysis:
-    kickoff = event.kickoff.astimezone(ZoneInfo(config.TIMEZONE)).strftime("%d.%m.%Y %H:%M")
+    tz = ZoneInfo(config.TIMEZONE)
+    kickoff = event.kickoff.astimezone(tz).strftime("%d.%m.%Y %H:%M")
+    now_local = datetime.now(tz).strftime("%d.%m.%Y %H:%M")
     prompt = f"""Spiel: {event.home} (Heim) vs {event.away} (Auswärts)
 Wettbewerb: {league_name} | Anstoß: {kickoff} ({config.TIMEZONE})
+Aktuelle Zeit: {now_local} – das Spiel hat NOCH NICHT begonnen. Suche nicht nach Ergebnissen.
 Fokus: {SPORT_HINTS[sport]}
 
 Daten von ESPN (Verletzte/Aufstellungen):
@@ -176,7 +195,7 @@ Recherchiere jetzt die aktuellen Infos (heute!) und schätze danach deine Wahrsc
 {JSON_SPEC}"""
 
     text, sources = await _ask_claude(prompt)
-    data = _extract_json(text)
+    data = _extract_json(_clean(text))
 
     picks: dict[str, Pick] = {}
     by_id = {s.id: s for s in selections}
@@ -194,7 +213,7 @@ Recherchiere jetzt die aktuellen Infos (heute!) und schätze danach deine Wahrsc
         label = str(z.get("auswahl", "")).strip()
         if not p or not label or not 1.01 < q < 100:
             continue
-        s = Selection(f"extra|{label}", "extra", label, q, z.get("buchmacher") or "Websuche",
+        s = Selection(f"extra|{label}", "extra", label, q, _book(z.get("buchmacher")),
                       None, from_search=True)
         picks[label] = Pick(s, p, p * q - 1, z.get("begruendung", ""))
 
@@ -210,6 +229,8 @@ Recherchiere jetzt die aktuellen Infos (heute!) und schätze danach deine Wahrsc
         main_tip = max(picks.values(), key=lambda pk: pk.ev)
     if main_tip and tip_data.get("begruendung"):
         main_tip.reason = tip_data["begruendung"]
+    if main_tip:
+        value = [pk for pk in value if pk is not main_tip]
     tip_text = ""
     if main_tip is None and (tip_data.get("id") or tip_data.get("begruendung")):
         tip_text = f"{tip_data.get('id', '')} – {tip_data.get('begruendung', '')}".strip(" –")
