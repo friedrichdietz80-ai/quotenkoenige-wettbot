@@ -10,7 +10,7 @@
  },
  "faellig": 2,
  "fehler": [
-  "Minnesota Timberwolves vs Dallas Mavericks: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgyxaytRyvmteyEeZjVgV'}",
-  "New York Giants vs Washington Commanders: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cgyxayx9mbCaUxCjTwtCW'}"
+  "New York Giants vs Washington Commanders: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgyxcUZP7xUuFdbmS8iBD'}",
+  "Minnesota Timberwolves vs Dallas Mavericks: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CgyxcUa85KSxSieydwCgo'}"
  ]
 }
