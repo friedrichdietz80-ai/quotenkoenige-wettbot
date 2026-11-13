@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-13T01:08+00:00",
+ "letzter_lauf": "2026-11-13T01:13+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -10,7 +10,7 @@
  },
  "faellig": 2,
  "fehler": [
-  "Phoenix Suns vs Charlotte Hornets: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cgz2uuyHBGsioyres1ZhX'}",
-  "New York Giants vs Washington Commanders: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cgz2uvASzjNYbtyaaJHGJ'}"
+  "Phoenix Suns vs Charlotte Hornets: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cgz3JUH6jSuThaCuqHmar'}",
+  "New York Giants vs Washington Commanders: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Cgz3JUKan9AuPsQ1dX2UJ'}"
  ]
 }
