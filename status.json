@@ -1,13 +1,12 @@
 {
- "letzter_lauf": "2026-11-13T10:18+00:00",
+ "letzter_lauf": "2026-11-13T10:31+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
   "anthropic_key_beginnt_mit_sk_ant": true,
   "leerzeichen_oder_anfuehrungszeichen": false,
   "discord": 200,
-  "anthropic": 503,
-  "anthropic_fehler": "credential validation failed"
+  "anthropic": 200
  },
  "faellig": 0,
  "fehler": []
