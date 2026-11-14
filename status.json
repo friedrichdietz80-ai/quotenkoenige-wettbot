@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-14T01:34+00:00",
+ "letzter_lauf": "2026-11-14T01:40+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -10,6 +10,6 @@
  },
  "faellig": 1,
  "fehler": [
-  "San Antonio Spurs vs Golden State Warriors: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch1xiR4DcJuwQYbmUBoWw'}"
+  "San Antonio Spurs vs Golden State Warriors: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch1y6zfuHYqjfY2Hg1QoM'}"
  ]
 }
