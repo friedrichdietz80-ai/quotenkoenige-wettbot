@@ -10,7 +10,7 @@
  },
  "faellig": 2,
  "fehler": [
-  "Norway vs Wales: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch37ZQ5yYsSe4gUQQ362T'}",
-  "Georgia vs Hungary: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch37ZQ5EEjoZzZJJHy1Ua'}"
+  "Georgia vs Hungary: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch37bAyzYYrNKVYN9WTbD'}",
+  "Norway vs Wales: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch37bBEsCuQoPKkzdsPvN'}"
  ]
 }
