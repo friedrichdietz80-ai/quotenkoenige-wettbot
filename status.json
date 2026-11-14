@@ -10,7 +10,7 @@
  },
  "faellig": 2,
  "fehler": [
-  "New Orleans Pelicans vs Denver Nuggets: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch3igqBs5R6NLyVRwKdys'}",
-  "Cleveland Cavaliers vs Dallas Mavericks: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch3igqTEtjk1mcNHW34NN'}"
+  "Cleveland Cavaliers vs Dallas Mavericks: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch3iiab5TuyS4Zt7bhThP'}",
+  "New Orleans Pelicans vs Denver Nuggets: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch3iiac4s8NzT2jS8dzU2'}"
  ]
 }
