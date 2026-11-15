@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-15T13:09+00:00",
+ "letzter_lauf": "2026-11-15T13:15+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -8,9 +8,10 @@
   "discord": 200,
   "anthropic": 200
  },
- "faellig": 2,
+ "faellig": 3,
  "fehler": [
-  "Cyprus vs Montenegro: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch4mXPyA4ddt7nHhsZ9pu'}",
-  "Latvia vs Armenia: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch4mXQRCTYL9wUmGAdULv'}"
+  "Detroit Lions vs New England Patriots: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch4muxhGdsaBRh6RFaVGp'}",
+  "Cyprus vs Montenegro: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch4muxmEnwN5igNH6vdMH'}",
+  "Latvia vs Armenia: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch4muxy8yMMhd1gfJfVQe'}"
  ]
 }
