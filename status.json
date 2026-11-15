@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-15T00:38+00:00",
+ "letzter_lauf": "2026-11-15T00:43+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -10,8 +10,8 @@
  },
  "faellig": 3,
  "fehler": [
-  "Minnesota Timberwolves vs Chicago Bulls: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch3nCb4V4KhKr5GWqbrkT'}",
-  "Memphis Grizzlies vs Brooklyn Nets: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch3nCb5DzsYDSeVYT8XDb'}",
-  "Miami Heat vs Detroit Pistons: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch3nCb3yyoC1Vj9P2Yv89'}"
+  "Miami Heat vs Detroit Pistons: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch3nb1ggXgAB3e7jcHzFc'}",
+  "Memphis Grizzlies vs Brooklyn Nets: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch3nb1fwbYnQwHBdZHCd5'}",
+  "Minnesota Timberwolves vs Chicago Bulls: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch3nb1sLvhZvBkn6fLm5o'}"
  ]
 }
