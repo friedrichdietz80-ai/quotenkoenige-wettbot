@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-15T20:25+00:00",
+ "letzter_lauf": "2026-11-15T20:30+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -8,11 +8,12 @@
   "discord": 200,
   "anthropic": 200
  },
- "faellig": 4,
+ "faellig": 5,
  "fehler": [
-  "Arizona Cardinals vs Los Angeles Rams: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch5Li3WVhFPHvv4Ln3s8x'}",
-  "Las Vegas Raiders vs Seattle Seahawks: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch5Li3XEhsxZD5pJB7K4N'}",
-  "Phoenix Suns vs Los Angeles Lakers: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch5Li3ZUgYCL6QtFhnofr'}",
-  "Dallas Cowboys vs San Francisco 49ers: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch5Li4iRJHranix27ER4x'}"
+  "Phoenix Suns vs Los Angeles Lakers: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch5M6XencrQaaGppBYtf3'}",
+  "Arizona Cardinals vs Los Angeles Rams: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch5M6XpCKY6zFgu8kL9qd'}",
+  "Las Vegas Raiders vs Seattle Seahawks: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch5M6XnxWuocXagBaMpCU'}",
+  "Dallas Cowboys vs San Francisco 49ers: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch5M6YugDJ654fRhQYUWb'}",
+  "LA Clippers vs Charlotte Hornets: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch5M6Z3ryrBPRBEUPYWDH'}"
  ]
 }
