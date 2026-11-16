@@ -10,7 +10,7 @@
  },
  "faellig": 2,
  "fehler": [
-  "Milwaukee Bucks vs Atlanta Hawks: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch5dx75Rxb1wjzhqA5hPU'}",
-  "Cincinnati Bengals vs Pittsburgh Steelers: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch5dx74SU5PKmf7D1qCct'}"
+  "Cincinnati Bengals vs Pittsburgh Steelers: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch5dywznXBhTF49Gmek9w'}",
+  "Milwaukee Bucks vs Atlanta Hawks: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch5dyx4W3z3V5FnJui5ez'}"
  ]
 }
