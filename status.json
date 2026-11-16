@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-16T23:20+00:00",
+ "letzter_lauf": "2026-11-16T23:25+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -10,8 +10,8 @@
  },
  "faellig": 3,
  "fehler": [
-  "Boston Celtics vs Orlando Magic: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch7TtWvcA2Y7rRVQbBSAb'}",
-  "Washington Wizards vs Memphis Grizzlies: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch7TtX82WfHoAnsefUz43'}",
-  "Cleveland Cavaliers vs Chicago Bulls: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch7TtX5Y5jJiQTShyAdST'}"
+  "Boston Celtics vs Orlando Magic: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch7UH2QmLX1npMSUi2enD'}",
+  "Cleveland Cavaliers vs Chicago Bulls: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch7UH2TVgKf9yEbv75Lin'}",
+  "Washington Wizards vs Memphis Grizzlies: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch7UH2e9TTs5b9TK5D4M1'}"
  ]
 }
