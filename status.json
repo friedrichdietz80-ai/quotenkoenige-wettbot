@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-16T19:43+00:00",
+ "letzter_lauf": "2026-11-16T19:50+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -8,12 +8,6 @@
   "discord": 200,
   "anthropic": 200
  },
- "faellig": 5,
- "fehler": [
-  "Germany vs Netherlands: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch7BMPyvzFK27743DniNj'}",
-  "Gibraltar vs Malta: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch7BMQLWHkSDBYKgr5gYr'}",
-  "Greece vs Serbia: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch7BMQg6SvzgZdFaFtLgq'}",
-  "North Macedonia vs Slovenia: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch7BMRcu8Hy1TmfdvQprM'}",
-  "Switzerland vs Scotland: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch7BMS3hNgmr8tvwm9hY5'}"
- ]
+ "faellig": 0,
+ "fehler": []
 }
