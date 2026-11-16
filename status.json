@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-16T01:02+00:00",
+ "letzter_lauf": "2026-11-16T01:36+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -8,9 +8,8 @@
   "discord": 200,
   "anthropic": 200
  },
- "faellig": 2,
+ "faellig": 1,
  "fehler": [
-  "Cincinnati Bengals vs Pittsburgh Steelers: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch5hsZ3x7G4y1DUu4sVTr'}",
-  "Sacramento Kings vs Oklahoma City Thunder: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch5hsYyVWP491g96TviuE'}"
+  "Sacramento Kings vs Oklahoma City Thunder: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch5kT1AyzTDjxYCAS14fe'}"
  ]
 }
