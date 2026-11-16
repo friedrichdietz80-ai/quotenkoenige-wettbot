@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-16T16:57+00:00",
+ "letzter_lauf": "2026-11-16T17:02+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -8,10 +8,6 @@
   "discord": 200,
   "anthropic": 200
  },
- "faellig": 3,
- "fehler": [
-  "Estonia vs Bulgaria: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch6xh5AstW2dFLUm7GLSt'}",
-  "Iceland vs Luxembourg: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch6xh5F5wpxTTZtWtTssN'}",
-  "Lithuania vs Liechtenstein: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch6xh5EqwrJuAFaFmyJrT'}"
- ]
+ "faellig": 0,
+ "fehler": []
 }
