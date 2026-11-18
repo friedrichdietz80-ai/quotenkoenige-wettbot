@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-18T03:53+00:00",
+ "letzter_lauf": "2026-11-18T03:59+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -10,6 +10,6 @@
  },
  "faellig": 1,
  "fehler": [
-  "Los Angeles Lakers vs Charlotte Hornets: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch9iYpYifn9a8X1QRNYLP'}"
+  "Los Angeles Lakers vs Charlotte Hornets: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch9iwKufnasAKLBv5nRQM'}"
  ]
 }
