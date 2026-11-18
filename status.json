@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-18T00:35+00:00",
+ "letzter_lauf": "2026-11-18T00:40+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -10,7 +10,7 @@
  },
  "faellig": 2,
  "fehler": [
-  "San Antonio Spurs vs Detroit Pistons: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch9TSd6E7dPJuCzu9ADXz'}",
-  "Minnesota Timberwolves vs Portland Trail Blazers: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch9TSdJ8Vg4XFP1tbMeov'}"
+  "San Antonio Spurs vs Detroit Pistons: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch9TqBuJ2YcydXN4UcAWY'}",
+  "Minnesota Timberwolves vs Portland Trail Blazers: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch9TqBtZPJ8iURzc7mYuL'}"
  ]
 }
