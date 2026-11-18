@@ -10,6 +10,6 @@
  },
  "faellig": 1,
  "fehler": [
-  "LA Clippers vs Utah Jazz: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch9dhRtrv87QeXsF7WwGL'}"
+  "LA Clippers vs Utah Jazz: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch9dkHVB2DqG7Qdk7GzfF'}"
  ]
 }
