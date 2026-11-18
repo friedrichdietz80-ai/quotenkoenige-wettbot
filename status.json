@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-18T00:23+00:00",
+ "letzter_lauf": "2026-11-18T00:28+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -10,8 +10,8 @@
  },
  "faellig": 3,
  "fehler": [
-  "Toronto Raptors vs New York Knicks: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch9SWKATndLvRrdzYGmnv'}",
-  "San Antonio Spurs vs Detroit Pistons: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch9SWKHex9qUjLZsnjz1i'}",
-  "Minnesota Timberwolves vs Portland Trail Blazers: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch9SWKFg1n7hTwaQoNzMV'}"
+  "Toronto Raptors vs New York Knicks: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch9StraCAWi8r2H2oUkU4'}",
+  "San Antonio Spurs vs Detroit Pistons: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch9Strbgg5FBnNk9VJsTr'}",
+  "Minnesota Timberwolves vs Portland Trail Blazers: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011Ch9StrhPdk8JHCkkqgGwX'}"
  ]
 }
