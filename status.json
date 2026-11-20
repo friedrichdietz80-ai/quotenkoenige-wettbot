@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-20T18:42+00:00",
+ "letzter_lauf": "2026-11-20T18:51+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -8,8 +8,9 @@
   "discord": 200,
   "anthropic": 200
  },
- "faellig": 1,
+ "faellig": 2,
  "fehler": [
-  "Bayern Munich vs FC Cologne: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChEfvUahv4ymxnQpkdndn'}"
+  "Bayern Munich vs FC Cologne: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChEgdF3kWs8u94atcnct1'}",
+  "Troyes vs Le Havre AC: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChEgdF3m2AbrwQpnGVuUH'}"
  ]
 }
