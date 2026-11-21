@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-21T19:47+00:00",
+ "letzter_lauf": "2026-11-21T19:52+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -10,6 +10,6 @@
  },
  "faellig": 1,
  "fehler": [
-  "Real Madrid vs Celta Vigo: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGegk4sMC5cR9xrCvAnw'}"
+  "Real Madrid vs Celta Vigo: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGf5HB1Couy1uhJ5ipo9'}"
  ]
 }
