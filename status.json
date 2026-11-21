@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-21T14:29+00:00",
+ "letzter_lauf": "2026-11-21T14:34+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -8,18 +8,13 @@
   "discord": 200,
   "anthropic": 200
  },
- "faellig": 11,
+ "faellig": 6,
  "fehler": [
-  "Bayer Leverkusen vs SC Paderborn 07: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGESNBoBy95Ut2jeuECt'}",
-  "1. FC Union Berlin vs RB Leipzig: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGESNAJpxfwk7uYYbn6a'}",
-  "Borussia Mönchengladbach vs Borussia Dortmund: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGESNEmT65Hy5cupQANA'}",
-  "SV Elversberg vs SC Freiburg: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGESPQikaupj5KPbLY4v'}",
-  "Eintracht Frankfurt vs TSG Hoffenheim: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGESPSTN41ggTYCt2E9z'}",
-  "AFC Bournemouth vs Nottingham Forest: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGESPXAWTuhmNbYQZJnr'}",
-  "Aston Villa vs Sunderland: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGESQCb9J8278q6x2KRK'}",
-  "Coventry City vs Crystal Palace: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGESQHYndPmvJEVvRhyD'}",
-  "Chelsea vs Leeds United: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGESQNkqnj6MxJj9rhqJ'}",
-  "Rayo Vallecano vs Valencia: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGESR4gujA9bpKpf1Xn5'}",
-  "Tottenham Hotspur vs Ipswich Town: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGESR7fCdSwegJFEHifB'}"
+  "Aston Villa vs Sunderland: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGEptdEhUWudYMdH9Hi5'}",
+  "Chelsea vs Leeds United: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGEptbWmihjpFxYCBUnA'}",
+  "AFC Bournemouth vs Nottingham Forest: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGEptfDgVnSLAJxKtt3r'}",
+  "Coventry City vs Crystal Palace: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGEpv2LVYFtd3cBLrYT6'}",
+  "Tottenham Hotspur vs Ipswich Town: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGEpv9mnYztzwrWTabyR'}",
+  "Rayo Vallecano vs Valencia: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGEpvhWfgGBV1ZkiwMAd'}"
  ]
 }
