@@ -10,6 +10,6 @@
  },
  "faellig": 1,
  "fehler": [
-  "Philadelphia 76ers vs Milwaukee Bucks: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGVfR8Wu7jJ1rAcfoMUX'}"
+  "Philadelphia 76ers vs Milwaukee Bucks: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGVgv55jmrtK9DQWtbtm'}"
  ]
 }
