@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-21T19:42+00:00",
+ "letzter_lauf": "2026-11-21T19:47+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -8,13 +8,8 @@
   "discord": 200,
   "anthropic": 200
  },
- "faellig": 6,
+ "faellig": 1,
  "fehler": [
-  "Napoli vs Torino: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGeJBzhbuidpo6JreqBJ'}",
-  "AS Monaco vs AJ Auxerre: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGeJC8NvbExWCPZS5mVa'}",
-  "Lens vs Toulouse: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGeJC79ctWXSLjnmBHp6'}",
-  "Lille vs Lyon: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGeJDQ2zzKk8GPXL9nsX'}",
-  "Strasbourg vs Brest: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGeJDZDKUcJBoRxGNuwt'}",
-  "Real Madrid vs Celta Vigo: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGeJDbvnPWdMQnyyRjjn'}"
+  "Real Madrid vs Celta Vigo: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChGegk4sMC5cR9xrCvAnw'}"
  ]
 }
