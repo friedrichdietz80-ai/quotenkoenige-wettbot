@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-21T02:49+00:00",
+ "letzter_lauf": "2026-11-21T02:54+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -10,7 +10,7 @@
  },
  "faellig": 2,
  "fehler": [
-  "Denver Nuggets vs Houston Rockets: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChFK3B3WFdWwNAvdB2uNj'}",
-  "Los Angeles Lakers vs Sacramento Kings: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChFK3B6FFX6JQytdhgAK7'}"
+  "Denver Nuggets vs Houston Rockets: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChFKRhE5KpVgtRzg3KVVJ'}",
+  "Los Angeles Lakers vs Sacramento Kings: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChFKRhXvm2Wf1juY8U8va'}"
  ]
 }
