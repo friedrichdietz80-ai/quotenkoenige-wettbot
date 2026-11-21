@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-21T12:08+00:00",
+ "letzter_lauf": "2026-11-21T12:13+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -10,7 +10,7 @@
  },
  "faellig": 2,
  "fehler": [
-  "Manchester City vs Fulham: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChG3ey8YmtTgHMgdMGG4q'}",
-  "Alavés vs Deportivo: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChG3eyBmww9rtq7jLof1s'}"
+  "Manchester City vs Fulham: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChG43NQtZNLu6sFcb3F8y'}",
+  "Alavés vs Deportivo: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChG43NW6m6dhDuA5uYsdC'}"
  ]
 }
