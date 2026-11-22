@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-22T15:55+00:00",
+ "letzter_lauf": "2026-11-22T16:00+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -8,10 +8,11 @@
   "discord": 200,
   "anthropic": 200
  },
- "faellig": 3,
+ "faellig": 4,
  "fehler": [
-  "Lorient vs Stade Rennais: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJEouWo2ipzBEUQzVLiX'}",
-  "Werder Bremen vs Hamburg SV: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJEouhTnjjpEkJCo9vkW'}",
-  "Liverpool vs Manchester United: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJEoujwn9Vu83SzxCPsR'}"
+  "Liverpool vs Manchester United: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJFCNuvsa2PNRhnNsFXT'}",
+  "Lorient vs Stade Rennais: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJFCNzQF34ojTVZDHCMJ'}",
+  "Werder Bremen vs Hamburg SV: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJFCP86ByGy8YcjTeb63'}",
+  "AC Milan vs Frosinone: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJFCQmoxfyXJCv66qc5b'}"
  ]
 }
