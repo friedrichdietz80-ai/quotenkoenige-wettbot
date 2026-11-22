@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-22T14:24+00:00",
+ "letzter_lauf": "2026-11-22T14:30+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -8,9 +8,8 @@
   "discord": 200,
   "anthropic": 200
  },
- "faellig": 2,
+ "faellig": 1,
  "fehler": [
-  "FC Augsburg vs Mainz: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJ7ucgNhYW8P1T7Ki961'}",
-  "Racing Santander vs Real Sociedad: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJ7ucetjMeJUs4gp5xGw'}"
+  "Racing Santander vs Real Sociedad: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJ8J9f4WmdZGWjLtivXb'}"
  ]
 }
