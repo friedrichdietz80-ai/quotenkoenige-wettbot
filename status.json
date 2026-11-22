@@ -10,6 +10,6 @@
  },
  "faellig": 1,
  "fehler": [
-  "Barcelona vs Villarreal: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChHxhX1Rvx8AATi9Q3aTu'}"
+  "Barcelona vs Villarreal: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChHxjTAZ9zk4man3Rpg52'}"
  ]
 }
