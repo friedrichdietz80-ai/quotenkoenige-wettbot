@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-22T19:25+00:00",
+ "letzter_lauf": "2026-11-22T19:30+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -8,10 +8,11 @@
   "discord": 200,
   "anthropic": 200
  },
- "faellig": 3,
+ "faellig": 4,
  "fehler": [
-  "Atalanta vs Internazionale: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJWqYuV8QgEXck8iMnMy'}",
-  "Marseille vs Le Mans: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJWqZ7srjkUhHak7Sfvg'}",
-  "Getafe vs Atlético Madrid: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJWqZD5yzvtcMmZJJH9B'}"
+  "Atalanta vs Internazionale: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJXE4T6gfnadvxAr3NY3'}",
+  "Getafe vs Atlético Madrid: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJXE4cH9xCmKx5hf3xeZ'}",
+  "Marseille vs Le Mans: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJXE4kD4NuE2zFWoUtrD'}",
+  "Atlanta Hawks vs Detroit Pistons: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJXE5hGT6rG7Hz3KNvUi'}"
  ]
 }
