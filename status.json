@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-22T21:13+00:00",
+ "letzter_lauf": "2026-11-22T21:14+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -10,7 +10,7 @@
  },
  "faellig": 2,
  "fehler": [
-  "New York Giants vs Jacksonville Jaguars: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJf4YSjvUxqEbkP2c6K2'}",
-  "Denver Broncos vs Las Vegas Raiders: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJf4YkLrZjtPtm4wVz83'}"
+  "New York Giants vs Jacksonville Jaguars: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJfA7DNPGrGjH7ifjmyr'}",
+  "Denver Broncos vs Las Vegas Raiders: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJfA7E6mctgG5A5LypFQ'}"
  ]
 }
