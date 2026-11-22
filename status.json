@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-22T18:55+00:00",
+ "letzter_lauf": "2026-11-22T19:00+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -8,9 +8,10 @@
   "discord": 200,
   "anthropic": 200
  },
- "faellig": 2,
+ "faellig": 3,
  "fehler": [
-  "Atalanta vs Internazionale: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJUWafPSEvUUWGiY5sm8'}",
-  "Marseille vs Le Mans: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJUWazj2qL57HaoGUCTm'}"
+  "Atalanta vs Internazionale: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJUu34jxN3C7Mf4tqBfv'}",
+  "Marseille vs Le Mans: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJUu3bFBqXy43fEhrYzF'}",
+  "Getafe vs Atlético Madrid: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChJUu3V3fbKkBbQaAsH4r'}"
  ]
 }
