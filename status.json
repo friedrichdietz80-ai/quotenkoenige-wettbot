@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-23T19:40+00:00",
+ "letzter_lauf": "2026-11-23T19:45+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -8,10 +8,9 @@
   "discord": 200,
   "anthropic": 200
  },
- "faellig": 3,
+ "faellig": 2,
  "fehler": [
-  "Levante vs Elche: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChLRmu4ze3t6wPkm8CdEd'}",
-  "Monza vs Fiorentina: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChLRmtmPva34CBtQGXN6j'}",
-  "Brentford vs Everton: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChLRmu8E25G7UJW8LYZKo'}"
+  "Brentford vs Everton: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChLSAN93HWQ9uwQoPqr2X'}",
+  "Levante vs Elche: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChLSAND1CUE55HE4dow1S'}"
  ]
 }
