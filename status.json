@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-24T16:55+00:00",
+ "letzter_lauf": "2026-11-24T17:00+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -10,7 +10,7 @@
  },
  "faellig": 2,
  "fehler": [
-  "Bodo/Glimt vs LASK Linz: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChN6zZkoU7VhbwrRHmgw5'}",
-  "Galatasaray vs Aston Villa: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChN6zZxxMgLSsGsiTPXxv'}"
+  "Bodo/Glimt vs LASK Linz: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChN7P4wbBMDoEhY4tMd1Z'}",
+  "Galatasaray vs Aston Villa: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChN7P52JLzoRb8vQuAWkZ'}"
  ]
 }
