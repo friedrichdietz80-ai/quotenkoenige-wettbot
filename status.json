@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-28T17:00+00:00",
+ "letzter_lauf": "2026-11-28T17:05+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -10,8 +10,8 @@
  },
  "faellig": 3,
  "fehler": [
-  "Ipswich Town vs Aston Villa: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChVgc5fyE7qqYf5zHBRR3'}",
-  "Elche vs Atlético Madrid: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChVgc5fEgmDVJQDDC9kRn'}",
-  "VfB Stuttgart vs Eintracht Frankfurt: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChVgc5eUtkcuw5ayLqMiL'}"
+  "Elche vs Atlético Madrid: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChVgzjae3NywSZcjgc3q3'}",
+  "Ipswich Town vs Aston Villa: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChVgzjbsgC3bTfPWvypcr'}",
+  "VfB Stuttgart vs Eintracht Frankfurt: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChVgzjdriuNycumpATawK'}"
  ]
 }
