@@ -1,5 +1,5 @@
 {
- "letzter_lauf": "2026-11-28T00:26+00:00",
+ "letzter_lauf": "2026-11-28T00:34+00:00",
  "schluessel": {
   "discord_token_laenge": 72,
   "anthropic_key_laenge": 106,
@@ -8,11 +8,9 @@
   "discord": 200,
   "anthropic": 200
  },
- "faellig": 4,
+ "faellig": 2,
  "fehler": [
-  "Toronto Raptors vs Brooklyn Nets: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChUNoEcT37WiTrZvrid7t'}",
-  "Indiana Pacers vs Philadelphia 76ers: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChUNoEcSuNb2H74taTa3d'}",
-  "Detroit Pistons vs Milwaukee Bucks: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChUNoEeBYrVHWayWGYguq'}",
-  "Boston Celtics vs Atlanta Hawks: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChUNoFfTCLpEBrcVJznDT'}"
+  "Minnesota Timberwolves vs Memphis Grizzlies: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChUPT1UjUTqa3hJMoqofG'}",
+  "Boston Celtics vs Atlanta Hawks: BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011ChUPT1XCp3bCfkMTD6N93'}"
  ]
 }
